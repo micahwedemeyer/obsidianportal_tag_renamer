@@ -15,6 +15,9 @@
 </div> <!-- container -->
 
 <div id="footer">
+  <% if logged_in? %>
+    <%= link_to 'Logout', logout_path %>
+  <% end %>
 </div> <!-- footer -->
 
 </body>

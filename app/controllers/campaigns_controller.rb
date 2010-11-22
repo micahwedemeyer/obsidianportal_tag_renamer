@@ -1,4 +1,6 @@
 class CampaignsController < ApplicationController
+  skip_before_filter :login_required, :only => [:index]
+  
   def index
     if params[:oauth_verifier]
       @request_token = session[:request_token]
@@ -7,6 +9,9 @@ class CampaignsController < ApplicationController
       session[:access_token_secret] = token.secret
       
       logger.info("Access Authorized")
+    elsif !logged_in?
+      redirect_to root_path
+      return
     end
     
     @me = JSON.parse(access_token.get('/v1/users/me.json').body)

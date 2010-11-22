@@ -60,5 +60,7 @@ OpTagRename::Application.routes.draw do
     resource :tag
   end
   
+  match '/logout' => "main#logout", :as => :logout
+  
   root :to => "main#index"
 end

@@ -1,10 +1,20 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  before_filter :login_required
   
   protected
   
   def logged_in?
-    !(session[:access_token] && session[:access_secret]).nil?
+    !(session[:access_token_secret] && session[:access_token_key]).nil?
+  end
+  helper_method :logged_in?
+  
+  def login_required
+    unless logged_in?
+      redirect_to root_path
+      return false
+    end
+    true
   end
   
   def consumer    
