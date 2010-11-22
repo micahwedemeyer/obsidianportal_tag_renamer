@@ -2,7 +2,11 @@ h2. Bulk Tag Renamer
 
 This is a little Obsidian Portal API test app that I wrote. The main purpose was to verify that the API works and functions as intended.
 
-The second purpose is to make it easy to bulk edit your tags.
+The second purpose is to make it easy to bulk edit your tags. This will become especially important once we switch tags over to being case sensitive.
+
+h2. Hosted at Heroku (eventually)
+
+Eventually, this will be hosted at Heroku for everyone to use. When that happens, I'll update the README to include a link.
 
 h2. Apologies for the quality
 
