@@ -1,0 +1,7 @@
+development:
+  consumer_key: XXX
+  consumer_secret: YYY
+
+production:
+  consumer_key: XXX
+  consumer_secret: YYY

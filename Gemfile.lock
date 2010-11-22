@@ -49,6 +49,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     oauth (0.4.4)
+    oauth-plugin (0.3.14)
+      oauth (>= 0.3.5)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -82,4 +84,5 @@ PLATFORMS
 DEPENDENCIES
   heroku (= 1.14.2)
   oauth (= 0.4.4)
+  oauth-plugin (= 0.3.14)
   rails (= 3.0.3)
