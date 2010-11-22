@@ -3,6 +3,7 @@ class MainController < ApplicationController
   
   def index
     if logged_in?
+      redirect_to campaigns_path
     else
       @request_token = consumer.get_request_token(:oauth_callback => campaigns_url)
       session[:request_token] = @request_token
