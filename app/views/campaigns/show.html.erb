@@ -1,0 +1,23 @@
+<div id="campaigns_show">
+  <h1><%= @campaign['name'] %></h1>
+  
+  <h2>Choose a tag to rename</h2>
+  <%= form_tag campaign_tag_path(:campaign_id => @campaign['id']), :method => :put %>
+    <div class='tag_list'>
+      <% @tags_with_counts.each do |t, n| %>
+        <div class='tag_option'>
+          <%= radio_button_tag 'old_tag', t %>
+          <%= t %> (<%= n %>)
+        </div>
+      <% end %>
+    </div>
+    
+    <div class='new_tag_input'>
+      <label for="new_tag">New Tag:</label>
+      <%= text_field_tag 'new_tag' %>
+    </div>
+    
+    <%= submit_tag 'Rename' %>
+    
+  </form>
+</div> <!-- campaigns_show -->

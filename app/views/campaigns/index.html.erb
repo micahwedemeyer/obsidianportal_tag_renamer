@@ -1,0 +1,10 @@
+<div id="campaigns_index">
+  <h2>Hello <%= @me['username'] %></h2>
+  <h3>Choose a campaign to play with</h3>
+  
+  <ul>
+    <% @campaigns.each do |c| %>
+      <li><%= link_to c['name'], campaign_path(:id => c['id']) %></li>
+    <% end %>
+  </ul>
+</div> <!-- campaigns_index -->
