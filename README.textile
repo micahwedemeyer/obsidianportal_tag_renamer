@@ -1,0 +1,9 @@
+h2. Bulk Tag Renamer
+
+This is a little Obsidian Portal API test app that I wrote. The main purpose was to verify that the API works and functions as intended.
+
+The second purpose is to make it easy to bulk edit your tags.
+
+h2. Apologies for the quality
+
+My apologies for the quality of the code. I was mainly just trying to bang it out as quickly as I could. Rest assured that the actual Obsidian Portal backend is much better architected and has a full test suite.
