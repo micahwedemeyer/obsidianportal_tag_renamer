@@ -4,6 +4,14 @@
     This is a very simple tool to allow you to rename or change your Obsidian Portal tags in bulk.
   </p>
   
-  <h2>Let's Get Started</h2>
-  <%= link_to 'Authorize Access', @authorize_url %>
+  <h2>Warnings and Disclaimers</h2>
+  <p>
+    This app was mainly an exercise in playing with <a href="http://help.obsidianportal.com/faqs/api/api-overview">the Obsidian Portal API</a>. Please realize that you are using this app at your own risk, and it may irrecoverably alter or delete your <strong>live Obsidian Portal data</strong>. This app is a toy, but the data is not!
+  </p>
+  
+  <h2><%= link_to "Let's Rename Some Tags!", @authorize_url %></h2>
+  
+  <p>
+    If you want to see how this app was made, the source is <a href="https://github.com/micahwedemeyer/obsidianportal_tag_renamer">available on github</a>.
+  </p>
 </div> <!-- main_index -->
