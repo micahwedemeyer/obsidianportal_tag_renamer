@@ -4,11 +4,11 @@ This is a little Obsidian Portal API test app that I wrote. The main purpose was
 
 The second purpose is to make it easy to bulk edit your tags. This will become especially important once we switch tags over to being case sensitive.
 
-h2. Hosted at Heroku
+h2. Try it live
 
-This app is "hosted at Heroku":http://floating-stone-53.heroku.com Take it for a spin.
+This app is "live at DragonTagger.com":http://dragontagger.com Take it for a spin.
 
-No guarantee that the version on Heroku is the latest available.
+No guarantee that the live version reflects what's here on github.
 
 h2. Apologies for the quality
 
