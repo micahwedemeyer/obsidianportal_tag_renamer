@@ -1,0 +1,8 @@
+.rename-wait-message {
+  display: none;
+}
+
+.rename-wait-message img.spinner {
+  float: left;
+  margin-right: 15px;
+}

@@ -24,10 +24,13 @@ class CampaignsController < ApplicationController
     
     @campaign = JSON.parse(access_token.get("/v1/campaigns/#{campaign_id}.json").body)
     @wiki_pages = JSON.parse(access_token.get("/v1/campaigns/#{campaign_id}/wikis.json").body)
+    @characters = JSON.parse(access_token.get("/v1/campaigns/#{campaign_id}/characters.json").body)
+    
+    entities = @wiki_pages + @characters
     
     @tags_with_counts = {}
-    @wiki_pages.each do |wp|
-      tag_list = wp['tags']
+    entities.each do |ent|
+      tag_list = ent['tags']
       tag_list.each do |t|
         if @tags_with_counts.has_key?(t)
           @tags_with_counts[t] = @tags_with_counts[t] + 1

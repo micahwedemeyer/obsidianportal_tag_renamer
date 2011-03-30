@@ -17,9 +17,16 @@
       <%= text_field_tag 'new_tag' %>
     </div>
     
-    <%= submit_tag 'Rename' %>
+    <%= submit_tag 'Rename', :class => 'tag-rename-submit' %>
     
   </form>
+  
+  <div class='rename-wait-message'>
+    <%= image_tag 'indicator.gif', :class => 'spinner' %>
+    <p>
+      Please wait while your tags are renamed. This can take a while, so please be patient and do not leave this page.
+    </p>
+  </div>
   
   <%= link_to 'Back to campaigns', campaigns_path %>
 </div> <!-- campaigns_show -->
